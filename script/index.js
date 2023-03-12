@@ -14,7 +14,11 @@ console.log(example5); // 12;
 //Task2
 const userQuestion = +prompt('What time is it?', '1');
 const result = `${userQuestion}` * 3600;
-if(`${userQuestion}`<=24) {alert('In' + `${userQuestion}` + 'hour' + `${result}` + 'seconds');}
+if(`${userQuestion}`>0) {
+    alert('In ' +userQuestion+ ' hour ' +result+ ' seconds');
+} else {
+    alert('Error... Try again');
+}
 
 //Task3
 let num = 1;
