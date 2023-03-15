@@ -1,10 +1,12 @@
 "use strict";
 
 //Task1
-const userQuestion = +prompt('In what year was the city of Kiev founded?');
-const result = userQuestion===482 ? 'True' : 'Go to study a history!';
-alert(result);
-
+const numOrStr = prompt('Input number to string');
+const result =
+    numOrStr === null ? 'вы отменили' :
+        numOrStr.trim() === '' ? 'Empty String' :
+            isNaN( +numOrStr ) ? ' number is Ba_NaN' : 'OK!';
+console.log(result);
 
 //Task2
 const numOrStr = prompt('Input number to string');
