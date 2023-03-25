@@ -1,11 +1,21 @@
 "use strict";
-const userNumber = +prompt('Enter number', '1');
-if(userNumber === 1 ) {
-    alert(`${userNumber} год`);
-} else if(userNumber>1 && userNumber<=4) {
-    alert(`${userNumber} года`);
-} else if(isNaN(userNumber)) {
-    alert('Нужно писать число');
-} else {
-    alert(`${userNumber} лет`);
+let userNumber = +prompt('Enter number', '1');
+function text (num) {
+    let messageUserNumber;
+    userNumber = num % 100;
+     if(userNumber>=5 && userNumber<=20) {
+         messageUserNumber = 'лет';
+     } else {
+         userNumber = userNumber % 10;
+         if(userNumber === 1) {
+             messageUserNumber = 'год';
+         } else if(userNumber>=2 && userNumber<=4) {
+             messageUserNumber = 'года';
+         }
+         else {
+             messageUserNumber = 'лет';
+         }
+     }
+     return messageUserNumber;
 }
+alert(`${userNumber}` + ' ' + text(userNumber));
