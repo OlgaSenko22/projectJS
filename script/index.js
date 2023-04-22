@@ -1,11 +1,13 @@
 "use strict";
-const userNumber = +prompt('Enter number', '1');
-const userNumberPower = +prompt('Enter number power', '1');
-function foo (userNumber, userNumberPower) {
-    if(isNaN(userNumber) || isNaN(userNumberPower)) {
+const userNumber = prompt('Enter number');
+const userNumberPower = prompt('Enter number power');
+
+const foo = (userNumber, userNumberPower = 1) => {
+    if(userNumber === null || isNaN(userNumber) || userNumber.trim() === "" || userNumberPower === null || isNaN(userNumberPower) || userNumberPower.trim() === "") {
         return 'some error';
-    } else {
-        return Math.pow(userNumber, userNumberPower);
     }
+        return Math.pow(userNumber, userNumberPower);
 }
-alert(foo(userNumber, userNumberPower));
+const result= foo(userNumber, userNumberPower);
+alert(result);
+
