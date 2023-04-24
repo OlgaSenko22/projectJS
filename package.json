@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaSenko22/projectJS.git"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Olga Senko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlgaSenko22/projectJS/issues"
+  },
+  "homepage": "https://github.com/OlgaSenko22/projectJS#readme"
+}
