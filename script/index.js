@@ -1,5 +1,5 @@
 "use strict";
-let obj = {
+const obj = {
     num: 5
 }
 function sumTo(a, b) {
